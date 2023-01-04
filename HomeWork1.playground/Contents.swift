@@ -96,7 +96,7 @@ print("Resim adı: \(resimAdı)")
 var dosyaFormatı: String = ".jpeg"
 print("Dosya formatı : \(dosyaFormatı)")
 
-var renk: UIColor = .blue
+var renk: String = "Mavi"
 print("Renk : \(renk)")
 
 var renkKodu: String = "#BCB8BE"
