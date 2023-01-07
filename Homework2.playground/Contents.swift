@@ -18,7 +18,7 @@ class Total {
 }
 var square = Total()
 square.total(numberOfEdges: 1)
-
+square.total(numberOfEdges: 5)
 
 // Soru 2: Girilen gün sayısına göre maaş hesabı yapan ve elde edilen değeri döndüren method.
 
@@ -39,6 +39,7 @@ class Salary {
     }
 }
 var total = Salary()
+total.calculate(workDay: 10)
 total.calculate(workDay: 30)
 
 // Soru 3: Parametre olarak girilen kota miktarına göre ücreti hesaplayarak geri döndüren method.
@@ -50,7 +51,7 @@ class QuotaAmount {
         
         if total > 100 {
             let exceed = (quota - 50) * 4 + 100
-            print("Aşım ile birlikte fiyatınız : \(exceed)")
+            print("Aşım ile birlikte kullanım ücreti : \(exceed)")
             return exceed
         }else{
             print("Kullanım ücreti \(total) tl dir.")
