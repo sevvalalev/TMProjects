@@ -33,6 +33,7 @@ class Salary {
             print("Mesai ile beraber maaş : \(withShift)")
             return withShift
         }else{
+            print("Maaş tutarınız : \(total)")
             return total
         }
     }
