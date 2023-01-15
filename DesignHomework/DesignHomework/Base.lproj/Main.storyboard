@@ -6,6 +6,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,111 +18,169 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="gYN-Ef-k7f">
-                                <rect key="frame" x="20" y="65" width="374" height="490"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="gYN-Ef-k7f">
+                                <rect key="frame" x="20" y="48" width="374" height="448"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="18"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sparks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpB-gz-MXe">
-                                <rect key="frame" x="20" y="563" width="92" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" name="text"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coldplay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPa-0R-R5l">
-                                <rect key="frame" x="20" y="614" width="66.5" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="text2"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="juQ-gu-e9G">
-                                <rect key="frame" x="18" y="651" width="378" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" name="text"/>
-                            </slider>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="IKX-u4-dFu">
-                                <rect key="frame" x="0.0" y="709" width="415" height="64"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="A1o-oy-JOw">
+                                <rect key="frame" x="20" y="570.5" width="374" height="65.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OUz-Oe-bjt">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="65.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sparks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpB-gz-MXe">
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="37"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <color key="textColor" name="text"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coldplay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPa-0R-R5l">
+                                                <rect key="frame" x="0.0" y="45" width="66.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="text2"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsG-pz-VhD">
+                                        <rect key="frame" x="337" y="0.0" width="37" height="65.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <color key="tintColor" red="1" green="0.1598565576" blue="0.084868119290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="❤️"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pJm-Cm-zes">
+                                <rect key="frame" x="20" y="656" width="374" height="60"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="juQ-gu-e9G">
+                                        <rect key="frame" x="-2" y="0.0" width="378" height="31"/>
+                                        <color key="tintColor" name="text"/>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SgZ-Qw-6EJ">
+                                        <rect key="frame" x="0.0" y="30" width="374" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:51" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXX-bj-huL">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" name="text"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:47" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkM-1k-pPv">
+                                                <rect key="frame" x="187" y="0.0" width="187" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" name="text"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="0oU-2V-rVI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IKX-u4-dFu">
+                                <rect key="frame" x="20" y="736" width="374" height="51"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXE-EF-YFu">
-                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="51"/>
                                         <color key="tintColor" red="0.98356761709999996" green="1" blue="0.99157126100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <imageReference key="image" image="shuffle" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            </preferredSymbolConfiguration>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRx-JT-xXd">
-                                        <rect key="frame" x="76.5" y="0.0" width="74" height="64"/>
+                                        <rect key="frame" x="79" y="0.0" width="58.5" height="51"/>
+                                        <color key="tintColor" name="text"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="back"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            </preferredSymbolConfiguration>
+                                        </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS2-mK-eWy">
-                                        <rect key="frame" x="178.5" y="0.0" width="59" height="64"/>
+                                        <rect key="frame" x="157.5" y="0.0" width="59" height="51"/>
+                                        <color key="tintColor" name="text"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="play"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            </preferredSymbolConfiguration>
+                                        </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-Nl-KrM">
-                                        <rect key="frame" x="265.5" y="0.0" width="74" height="64"/>
+                                        <rect key="frame" x="236.5" y="0.0" width="58.5" height="51"/>
+                                        <color key="tintColor" name="text"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="forward"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            </preferredSymbolConfiguration>
+                                        </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2z3-z6-1wj">
-                                        <rect key="frame" x="367.5" y="0.0" width="47.5" height="64"/>
+                                        <rect key="frame" x="315" y="0.0" width="59" height="51"/>
                                         <color key="tintColor" red="0.98356761709999996" green="1" blue="0.99157126100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <imageReference key="image" image="repeat" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            </preferredSymbolConfiguration>
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsG-pz-VhD">
-                                <rect key="frame" x="358" y="574" width="37" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="tintColor" red="1" green="0.1598565576" blue="0.084868119290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="❤️"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1:51" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXX-bj-huL">
-                                <rect key="frame" x="20.5" y="678" width="24" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" name="text"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZS-BR-UQv">
-                                <rect key="frame" x="338.5" y="821" width="55.5" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.98356761709999996" green="1" blue="0.99157126100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="shareplay" catalog="system" symbolScale="large"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khA-e9-Gkf">
-                                <rect key="frame" x="281" y="821" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.98356761709999996" green="1" blue="0.99157126100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="square.and.arrow.up.on.square" catalog="system" symbolScale="large"/>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3:47" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkM-1k-pPv">
-                                <rect key="frame" x="366.5" y="678" width="27.5" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" name="text"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HhG-lC-3vh">
+                                <rect key="frame" x="20" y="811" width="374" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khA-e9-Gkf">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="31"/>
+                                        <color key="tintColor" red="0.98356761709999996" green="1" blue="0.99157126100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="square.and.arrow.up.on.square" catalog="system" symbolScale="large"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZS-BR-UQv">
+                                        <rect key="frame" x="318.5" y="0.0" width="55.5" height="31"/>
+                                        <color key="tintColor" red="0.98356761709999996" green="1" blue="0.99157126100000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="shareplay" catalog="system" symbolScale="large"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="main"/>
+                        <constraints>
+                            <constraint firstItem="gYN-Ef-k7f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HS2-Hp-bN6"/>
+                            <constraint firstItem="IKX-u4-dFu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="POC-RB-pa8"/>
+                            <constraint firstItem="pJm-Cm-zes" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YL9-Bw-7I9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gYN-Ef-k7f" secondAttribute="trailing" constant="20" id="Zhe-Nc-v0h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pJm-Cm-zes" secondAttribute="trailing" constant="20" id="cLd-wu-Htv"/>
+                            <constraint firstAttribute="trailing" secondItem="IKX-u4-dFu" secondAttribute="trailing" constant="20" id="cQC-fk-QwV"/>
+                            <constraint firstItem="pJm-Cm-zes" firstAttribute="top" secondItem="A1o-oy-JOw" secondAttribute="bottom" constant="20" id="j5J-7Z-exG"/>
+                            <constraint firstItem="HhG-lC-3vh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kQE-Xb-ScP"/>
+                            <constraint firstItem="gYN-Ef-k7f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="kYn-OT-HKc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HhG-lC-3vh" secondAttribute="trailing" constant="20" id="kZu-2m-fvg"/>
+                            <constraint firstItem="HhG-lC-3vh" firstAttribute="top" secondItem="IKX-u4-dFu" secondAttribute="bottom" constant="24" id="l3y-z2-Atb"/>
+                            <constraint firstItem="A1o-oy-JOw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mXt-IX-Kt6"/>
+                            <constraint firstItem="IKX-u4-dFu" firstAttribute="top" secondItem="pJm-Cm-zes" secondAttribute="bottom" constant="20" id="n8u-el-UN5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A1o-oy-JOw" secondAttribute="trailing" constant="20" id="sJb-ah-COF"/>
+                            <constraint firstItem="gYN-Ef-k7f" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="xcl-4K-1VU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HhG-lC-3vh" secondAttribute="bottom" constant="20" id="xvt-Dd-g6p"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kI4-oN-dYZ"/>
                 </viewController>
@@ -132,10 +191,9 @@
         <!--Navigation Controller-->
         <scene sceneID="4L8-Nl-eLb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fjk-FQ-7ew" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="fjk-FQ-7ew" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e3u-Vp-zsJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -149,10 +207,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="50" height="50"/>
-        <image name="forward" width="50" height="50"/>
+        <image name="backward.fill" catalog="system" width="128" height="79"/>
+        <image name="forward.fill" catalog="system" width="128" height="79"/>
         <image name="image" width="640" height="640"/>
-        <image name="play" width="35" height="39"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="repeat" catalog="system" width="128" height="98"/>
         <image name="shareplay" catalog="system" width="128" height="73"/>
         <image name="shuffle" catalog="system" width="128" height="95"/>
