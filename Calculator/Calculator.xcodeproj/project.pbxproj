@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A434278D297B3F690072ECDD /* CLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434278C297B3F690072ECDD /* CLogic.swift */; };
 		A4D359402977535D004A100C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D3593F2977535D004A100C /* AppDelegate.swift */; };
 		A4D359422977535D004A100C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D359412977535D004A100C /* SceneDelegate.swift */; };
 		A4D359442977535D004A100C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D359432977535D004A100C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A434278C297B3F690072ECDD /* CLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLogic.swift; sourceTree = "<group>"; };
 		A4D3593C2977535D004A100C /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D3593F2977535D004A100C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4D359412977535D004A100C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A434278E297B3F740072ECDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A434278C297B3F690072ECDD /* CLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A434278F297B3F7D0072ECDD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4D359432977535D004A100C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A4342790297B3F8A0072ECDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4D359452977535D004A100C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A4D359332977535D004A100C = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +84,9 @@
 			children = (
 				A4D3593F2977535D004A100C /* AppDelegate.swift */,
 				A4D359412977535D004A100C /* SceneDelegate.swift */,
-				A4D359432977535D004A100C /* ViewController.swift */,
-				A4D359452977535D004A100C /* Main.storyboard */,
+				A434278F297B3F7D0072ECDD /* Controller */,
+				A434278E297B3F740072ECDD /* Model */,
+				A4342790297B3F8A0072ECDD /* View */,
 				A4D3594829775364004A100C /* Assets.xcassets */,
 				A4D3594A29775364004A100C /* LaunchScreen.storyboard */,
 				A4D3594D29775364004A100C /* Info.plist */,
@@ -138,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A434278D297B3F690072ECDD /* CLogic.swift in Sources */,
 				A4D359442977535D004A100C /* ViewController.swift in Sources */,
 				A4D359402977535D004A100C /* AppDelegate.swift in Sources */,
 				A4D359422977535D004A100C /* SceneDelegate.swift in Sources */,

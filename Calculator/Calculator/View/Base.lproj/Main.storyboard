@@ -217,20 +217,8 @@
                                                             <action selector="calculationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nzC-jt-uum"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gj4-Hg-870">
-                                                        <rect key="frame" x="0.0" y="316" width="100" height="153"/>
-                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="=">
-                                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="38"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="calculationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uta-fR-ROa"/>
-                                                        </connections>
-                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuu-6X-QoW">
-                                                        <rect key="frame" x="0.0" y="474" width="100" height="153"/>
+                                                        <rect key="frame" x="0.0" y="316" width="100" height="153"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
@@ -239,6 +227,18 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TPA-z2-mbp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gj4-Hg-870">
+                                                        <rect key="frame" x="0.0" y="474" width="100" height="153"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="=">
+                                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="38"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calculationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uta-fR-ROa"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
