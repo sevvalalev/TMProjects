@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  AppStoreDesign
+//  AppStore
 //
 //  Created by Sevval Alev on 25.01.2023.
 //
