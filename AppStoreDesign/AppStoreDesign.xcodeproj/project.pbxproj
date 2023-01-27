@@ -13,6 +13,8 @@
 		A4CC06532981C45E00D905C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CC06512981C45E00D905C6 /* Main.storyboard */; };
 		A4CC06552981C46000D905C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CC06542981C46000D905C6 /* Assets.xcassets */; };
 		A4CC06582981C46000D905C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CC06562981C46000D905C6 /* LaunchScreen.storyboard */; };
+		A4D65E342982C1A700A57A5F /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D65E322982C1A700A57A5F /* GameCell.swift */; };
+		A4D65E352982C1A700A57A5F /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4D65E332982C1A700A57A5F /* GameCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A4CC06542981C46000D905C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4CC06572981C46000D905C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4CC06592981C46000D905C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4D65E322982C1A700A57A5F /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		A4D65E332982C1A700A57A5F /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				A4CC064B2981C45E00D905C6 /* AppDelegate.swift */,
 				A4CC064D2981C45E00D905C6 /* SceneDelegate.swift */,
 				A4CC064F2981C45E00D905C6 /* ViewController.swift */,
+				A4D65E322982C1A700A57A5F /* GameCell.swift */,
+				A4D65E332982C1A700A57A5F /* GameCell.xib */,
 				A4CC06512981C45E00D905C6 /* Main.storyboard */,
 				A4CC06542981C46000D905C6 /* Assets.xcassets */,
 				A4CC06562981C46000D905C6 /* LaunchScreen.storyboard */,
@@ -128,6 +134,7 @@
 				A4CC06582981C46000D905C6 /* LaunchScreen.storyboard in Resources */,
 				A4CC06552981C46000D905C6 /* Assets.xcassets in Resources */,
 				A4CC06532981C45E00D905C6 /* Main.storyboard in Resources */,
+				A4D65E352982C1A700A57A5F /* GameCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 				A4CC06502981C45E00D905C6 /* ViewController.swift in Sources */,
 				A4CC064C2981C45E00D905C6 /* AppDelegate.swift in Sources */,
 				A4CC064E2981C45E00D905C6 /* SceneDelegate.swift in Sources */,
+				A4D65E342982C1A700A57A5F /* GameCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
