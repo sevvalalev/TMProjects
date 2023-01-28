@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CAi-w7-IqX">
-                        <rect key="frame" x="8" y="0.0" width="323" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="339" height="300"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="P1W-W5-E3N">
                             <size key="itemSize" width="128" height="128"/>
@@ -29,10 +29,10 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="CAi-w7-IqX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HhP-Lh-b9e"/>
-                    <constraint firstItem="CAi-w7-IqX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="tbq-DO-yQN"/>
-                    <constraint firstAttribute="trailing" secondItem="CAi-w7-IqX" secondAttribute="trailing" constant="8" id="yc2-cw-Vbj"/>
-                    <constraint firstAttribute="bottom" secondItem="CAi-w7-IqX" secondAttribute="bottom" id="zce-Og-wcf"/>
+                    <constraint firstItem="CAi-w7-IqX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B3M-fK-ZIt"/>
+                    <constraint firstAttribute="trailing" secondItem="CAi-w7-IqX" secondAttribute="trailing" id="gDq-Pk-aHJ"/>
+                    <constraint firstAttribute="bottom" secondItem="CAi-w7-IqX" secondAttribute="bottom" id="i8t-2h-dUX"/>
+                    <constraint firstItem="CAi-w7-IqX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ze5-ai-NOp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

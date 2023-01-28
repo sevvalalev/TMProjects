@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,42 +18,43 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="township" translatesAutoresizingMaskIntoConstraints="NO" id="n2H-39-lua">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <rect key="frame" x="8" y="10" width="80" height="80"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="100" id="Hpa-el-VgA"/>
-                            <constraint firstAttribute="height" constant="100" id="gir-gl-oVj"/>
+                            <constraint firstAttribute="width" constant="80" id="Qlf-wx-4g6"/>
+                            <constraint firstAttribute="height" constant="80" id="x8S-4M-JYl"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOO-Nq-2T6">
-                        <rect key="frame" x="102" y="25" width="104.5" height="23"/>
+                        <rect key="frame" x="98" y="25" width="104.5" height="23"/>
                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPB-Yx-kyf">
+                        <rect key="frame" x="259" y="25" width="89" height="36"/>
+                        <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="DOWNLOAD">
+                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
+                        </buttonConfiguration>
+                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmC-wG-kai">
-                        <rect key="frame" x="102" y="50" width="63" height="18"/>
+                        <rect key="frame" x="98" y="50" width="63" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPB-Yx-kyf">
-                        <rect key="frame" x="247" y="25" width="105" height="36"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="DOWNLOAD"/>
-                    </button>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="cPB-Yx-kyf" secondAttribute="trailing" constant="2" id="UMe-zO-f90"/>
-                <constraint firstAttribute="bottom" secondItem="n2H-39-lua" secondAttribute="bottom" id="Vkz-yZ-Jcn"/>
-                <constraint firstItem="JmC-wG-kai" firstAttribute="leading" secondItem="n2H-39-lua" secondAttribute="trailing" constant="2" id="WXI-LD-TnG"/>
-                <constraint firstItem="n2H-39-lua" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZZl-4v-0oz"/>
+                <constraint firstItem="vOO-Nq-2T6" firstAttribute="leading" secondItem="n2H-39-lua" secondAttribute="trailing" constant="10" id="Fey-FW-5vv"/>
+                <constraint firstAttribute="trailing" secondItem="cPB-Yx-kyf" secondAttribute="trailing" constant="6" id="UMe-zO-f90"/>
+                <constraint firstItem="n2H-39-lua" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="cf6-ou-dG3"/>
                 <constraint firstItem="JmC-wG-kai" firstAttribute="top" secondItem="vOO-Nq-2T6" secondAttribute="bottom" constant="2" id="ddr-nk-5jJ"/>
                 <constraint firstItem="cPB-Yx-kyf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="dsA-uJ-0D7"/>
                 <constraint firstAttribute="bottom" secondItem="cPB-Yx-kyf" secondAttribute="bottom" constant="39" id="fJG-nY-ouF"/>
-                <constraint firstItem="n2H-39-lua" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nQF-pM-XHW"/>
-                <constraint firstItem="vOO-Nq-2T6" firstAttribute="leading" secondItem="n2H-39-lua" secondAttribute="trailing" constant="2" id="x6h-Kf-zSq"/>
+                <constraint firstItem="JmC-wG-kai" firstAttribute="leading" secondItem="n2H-39-lua" secondAttribute="trailing" constant="10" id="kCk-dD-sZf"/>
+                <constraint firstItem="n2H-39-lua" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="nrP-cq-ueh"/>
                 <constraint firstItem="vOO-Nq-2T6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="xuo-op-cX9"/>
             </constraints>
             <size key="customSize" width="354" height="70"/>
@@ -67,5 +69,8 @@
     </objects>
     <resources>
         <image name="township" width="1200" height="675"/>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

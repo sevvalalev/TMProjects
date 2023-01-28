@@ -29,7 +29,7 @@ class SecondTableViewCell: UITableViewCell {
         layout.scrollDirection = .horizontal
         let screenWidth = UIScreen.main.bounds.width
         let itemWidth = (screenWidth - 16) / 1
-        layout.itemSize = CGSize(width: itemWidth , height: itemWidth * 0.75)
+        layout.itemSize = CGSize(width: itemWidth , height: itemWidth * 0.25)
         collectionView.collectionViewLayout = layout
     }
 
@@ -44,7 +44,7 @@ class SecondTableViewCell: UITableViewCell {
 extension SecondTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 9
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -52,5 +52,15 @@ extension SecondTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
             return cell
         }
         return UICollectionViewCell()
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.size.width/2.5, height: view.frame.size.width/2.5)
     }
 }

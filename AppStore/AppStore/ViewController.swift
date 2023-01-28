@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -41,6 +41,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             }
         }else if indexPath.section == 1 {
             if let cell2 = tableView.dequeueReusableCell(withIdentifier: "secondTableViewCell", for: indexPath) as? SecondTableViewCell {
+                return cell2
+            }
+        }else if indexPath.section == 2 {
+            if let cell2 = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as? TableViewCell {
                 return cell2
             }
         }
