@@ -13,7 +13,8 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet var secondLabel: UILabel!
     @IBOutlet var gameImage: UIImageView!
     
-    @IBOutlet var downloadButtın: UIButton!
+    @IBOutlet var downloadButton: UIButton!
+    
     static let identifier = "collectionViewCell"
     
     override func awakeFromNib() {
@@ -23,7 +24,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     func configureUI() {
         gameImage.layer.cornerRadius = 10
-        downloadButtın.layer.cornerRadius = 20
+        downloadButton.layer.cornerRadius = 20
     }
 
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A47D8C7D29854FE000D87304 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D8C7B29854FE000D87304 /* SecondTableViewCell.swift */; };
+		A47D8C7E29854FE000D87304 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47D8C7C29854FE000D87304 /* SecondTableViewCell.xib */; };
+		A47D8C8129854FFE00D87304 /* SecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D8C7F29854FFE00D87304 /* SecondCollectionViewCell.swift */; };
+		A47D8C8229854FFE00D87304 /* SecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47D8C8029854FFE00D87304 /* SecondCollectionViewCell.xib */; };
 		A48F370E29848870003C0B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F370D29848870003C0B09 /* AppDelegate.swift */; };
 		A48F371029848870003C0B09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F370F29848870003C0B09 /* SceneDelegate.swift */; };
 		A48F371229848870003C0B09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48F371129848870003C0B09 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A47D8C7B29854FE000D87304 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		A47D8C7C29854FE000D87304 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		A47D8C7F29854FFE00D87304 /* SecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewCell.swift; sourceTree = "<group>"; };
+		A47D8C8029854FFE00D87304 /* SecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCollectionViewCell.xib; sourceTree = "<group>"; };
 		A48F370A29848870003C0B09 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48F370D29848870003C0B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48F370F29848870003C0B09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 				A48F372229848957003C0B09 /* TableViewCell.xib */,
 				A48F372529848CAB003C0B09 /* CollectionViewCell.swift */,
 				A48F372629848CAB003C0B09 /* CollectionViewCell.xib */,
+				A47D8C7B29854FE000D87304 /* SecondTableViewCell.swift */,
+				A47D8C7C29854FE000D87304 /* SecondTableViewCell.xib */,
+				A47D8C7F29854FFE00D87304 /* SecondCollectionViewCell.swift */,
+				A47D8C8029854FFE00D87304 /* SecondCollectionViewCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -146,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48F371A29848875003C0B09 /* LaunchScreen.storyboard in Resources */,
+				A47D8C8229854FFE00D87304 /* SecondCollectionViewCell.xib in Resources */,
+				A47D8C7E29854FE000D87304 /* SecondTableViewCell.xib in Resources */,
 				A48F372429848957003C0B09 /* TableViewCell.xib in Resources */,
 				A48F371729848875003C0B09 /* Assets.xcassets in Resources */,
 				A48F371529848870003C0B09 /* Main.storyboard in Resources */,
@@ -160,11 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47D8C8129854FFE00D87304 /* SecondCollectionViewCell.swift in Sources */,
 				A48F372729848CAB003C0B09 /* CollectionViewCell.swift in Sources */,
 				A48F371229848870003C0B09 /* ViewController.swift in Sources */,
 				A48F372329848957003C0B09 /* TableViewCell.swift in Sources */,
 				A48F370E29848870003C0B09 /* AppDelegate.swift in Sources */,
 				A48F371029848870003C0B09 /* SceneDelegate.swift in Sources */,
+				A47D8C7D29854FE000D87304 /* SecondTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

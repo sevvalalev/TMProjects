@@ -64,7 +64,7 @@
             </constraints>
             <size key="customSize" width="397" height="315"/>
             <connections>
-                <outlet property="downloadButtın" destination="f1L-vw-u8o" id="qrw-e5-Ht1"/>
+                <outlet property="downloadButton" destination="f1L-vw-u8o" id="clc-PA-XVc"/>
                 <outlet property="firstLabel" destination="BaC-dQ-FZr" id="e8e-lT-Adf"/>
                 <outlet property="gameImage" destination="gbD-Uq-Aem" id="HzC-ur-6Ik"/>
                 <outlet property="secondLabel" destination="7GG-b5-bz7" id="lqG-Fl-Zht"/>
