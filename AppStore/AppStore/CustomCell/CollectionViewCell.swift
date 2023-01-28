@@ -24,7 +24,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     func configureUI() {
         gameImage.layer.cornerRadius = 10
-        downloadButton.layer.cornerRadius = 20
+        downloadButton.layer.cornerRadius = 15
     }
 
 }

@@ -14,17 +14,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       tableViewDelegate()
+        customNibs()
+    }
+    
+    func tableViewDelegate() {
         tableView.delegate = self
         tableView.dataSource = self
-        
+    }
+
+    func customNibs() {
         let customCellNib: UINib = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(customCellNib, forCellReuseIdentifier: "tableViewCell")
         
         let secondCustomCellNib: UINib = UINib(nibName: "SecondTableViewCell", bundle: nil)
         tableView.register(secondCustomCellNib, forCellReuseIdentifier: "secondTableViewCell")
-        
     }
-
 
 }
 

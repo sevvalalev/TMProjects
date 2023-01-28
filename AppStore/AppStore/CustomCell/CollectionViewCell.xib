@@ -39,25 +39,37 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1L-vw-u8o">
-                        <rect key="frame" x="293" y="269" width="89" height="31"/>
+                        <rect key="frame" x="292" y="264" width="85" height="31"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="0c5-oT-DmY"/>
+                        </constraints>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="Download"/>
+                        <buttonConfiguration key="configuration" style="plain" title="GET"/>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-App Purchases" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuc-LU-xic">
+                        <rect key="frame" x="291" y="295" width="86" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" systemColor="systemGray5Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="Yuc-LU-xic" secondAttribute="trailing" constant="20" id="0ga-Dt-BK2"/>
+                <constraint firstAttribute="bottom" secondItem="Yuc-LU-xic" secondAttribute="bottom" id="72o-6o-Mye"/>
                 <constraint firstItem="BaC-dQ-FZr" firstAttribute="top" secondItem="ZST-kI-FCc" secondAttribute="bottom" constant="2" id="7rh-eb-0u6"/>
                 <constraint firstItem="BaC-dQ-FZr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="CsN-rg-mCc"/>
                 <constraint firstAttribute="bottom" secondItem="gbD-Uq-Aem" secondAttribute="bottom" id="Kcp-8e-yy1"/>
-                <constraint firstAttribute="trailing" secondItem="f1L-vw-u8o" secondAttribute="trailing" constant="15" id="Nkf-Kp-bea"/>
+                <constraint firstAttribute="trailing" secondItem="f1L-vw-u8o" secondAttribute="trailing" constant="20" id="Nkf-Kp-bea"/>
                 <constraint firstItem="ZST-kI-FCc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="OcO-Qq-RbE"/>
                 <constraint firstItem="7GG-b5-bz7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Orb-Vm-gaX"/>
                 <constraint firstAttribute="trailing" secondItem="gbD-Uq-Aem" secondAttribute="trailing" constant="8" id="XDW-3v-7G7"/>
+                <constraint firstItem="Yuc-LU-xic" firstAttribute="top" secondItem="f1L-vw-u8o" secondAttribute="bottom" id="aAt-Yl-x2I"/>
                 <constraint firstItem="gbD-Uq-Aem" firstAttribute="top" secondItem="7GG-b5-bz7" secondAttribute="bottom" constant="2" id="aiP-sb-viN"/>
-                <constraint firstAttribute="bottom" secondItem="f1L-vw-u8o" secondAttribute="bottom" constant="15" id="hKc-Li-ezW"/>
+                <constraint firstAttribute="bottom" secondItem="f1L-vw-u8o" secondAttribute="bottom" constant="20" id="hKc-Li-ezW"/>
                 <constraint firstItem="gbD-Uq-Aem" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="oYK-nu-gi9"/>
                 <constraint firstItem="ZST-kI-FCc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uzm-7g-GoG"/>
                 <constraint firstItem="7GG-b5-bz7" firstAttribute="top" secondItem="BaC-dQ-FZr" secondAttribute="bottom" constant="2" id="wFF-yd-V7m"/>
@@ -76,6 +88,9 @@
         <image name="township" width="1200" height="675"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

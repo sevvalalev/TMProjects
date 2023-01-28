@@ -29,7 +29,7 @@ class TableViewCell: UITableViewCell {
         layout.scrollDirection = .horizontal
         let screenWidth = UIScreen.main.bounds.width
         let itemWidth = (screenWidth - 16) / 1
-        layout.itemSize = CGSize(width: itemWidth , height: itemWidth * 0.7)
+        layout.itemSize = CGSize(width: itemWidth , height: itemWidth * 0.75)
         collectionView.collectionViewLayout = layout
     }
 
