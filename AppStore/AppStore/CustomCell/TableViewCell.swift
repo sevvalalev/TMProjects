@@ -16,12 +16,9 @@ class TableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        
-        let customCellNib: UINib = UINib(nibName: "CollectionViewCell", bundle: nil)
-        collectionView.register(customCellNib, forCellWithReuseIdentifier: "collectionViewCell")
-        
+        collectionViewDelegate()
+        customNibs()
+
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.minimumInteritemSpacing = 0
@@ -31,6 +28,16 @@ class TableViewCell: UITableViewCell {
         let itemWidth = (screenWidth - 16) / 1
         layout.itemSize = CGSize(width: itemWidth , height: itemWidth * 0.75)
         collectionView.collectionViewLayout = layout
+    }
+    
+    func collectionViewDelegate() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+    
+    func customNibs() {
+        let customCellNib: UINib = UINib(nibName: "CollectionViewCell", bundle: nil)
+        collectionView.register(customCellNib, forCellWithReuseIdentifier: "collectionViewCell")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

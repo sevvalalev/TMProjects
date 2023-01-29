@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="392" height="212"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="P6J-ea-fAh">
-                                <rect key="frame" x="0.0" y="0.0" width="392" height="212"/>
+                                <rect key="frame" x="0.0" y="31" width="392" height="181"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B1R-lT-Ssw">
                                     <size key="itemSize" width="128" height="128"/>
@@ -30,13 +30,29 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzU-X5-66M">
+                                <rect key="frame" x="315.5" y="0.0" width="68.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="See All"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What We're Playing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESX-Qg-KlW">
+                                <rect key="frame" x="8" y="0.0" width="212" height="31"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="P6J-ea-fAh" firstAttribute="top" secondItem="nxL-WA-czk" secondAttribute="top" id="Dey-uV-BbW"/>
                             <constraint firstAttribute="bottom" secondItem="P6J-ea-fAh" secondAttribute="bottom" id="MIR-ab-I4Z"/>
+                            <constraint firstAttribute="trailing" secondItem="WzU-X5-66M" secondAttribute="trailing" constant="8" id="brp-m1-XyF"/>
                             <constraint firstAttribute="trailing" secondItem="P6J-ea-fAh" secondAttribute="trailing" id="hhN-yJ-nUB"/>
+                            <constraint firstItem="ESX-Qg-KlW" firstAttribute="top" secondItem="nxL-WA-czk" secondAttribute="top" id="jLg-zK-lat"/>
+                            <constraint firstItem="ESX-Qg-KlW" firstAttribute="leading" secondItem="nxL-WA-czk" secondAttribute="leading" constant="8" id="lbE-2z-rQF"/>
                             <constraint firstItem="P6J-ea-fAh" firstAttribute="leading" secondItem="nxL-WA-czk" secondAttribute="leading" id="mpP-Xl-bns"/>
+                            <constraint firstItem="P6J-ea-fAh" firstAttribute="top" secondItem="WzU-X5-66M" secondAttribute="bottom" id="r2y-hM-Ovz"/>
+                            <constraint firstItem="P6J-ea-fAh" firstAttribute="top" secondItem="ESX-Qg-KlW" secondAttribute="bottom" id="udH-QZ-Ndg"/>
+                            <constraint firstItem="WzU-X5-66M" firstAttribute="top" secondItem="nxL-WA-czk" secondAttribute="top" id="zQ0-Px-dOa"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -50,6 +66,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectionView" destination="P6J-ea-fAh" id="E5m-Xu-7R9"/>
+                <outlet property="sectionHeaderLabel" destination="ESX-Qg-KlW" id="7dw-3Q-Dxz"/>
             </connections>
             <point key="canvasLocation" x="184.05797101449278" y="182.14285714285714"/>
         </tableViewCell>

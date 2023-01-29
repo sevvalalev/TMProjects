@@ -10,6 +10,7 @@ import UIKit
 class SecondTableViewCell: UITableViewCell {
 
     @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var sectionHeaderLabel: UILabel!
     
     static let identifier = "secondTableViewCell"
     

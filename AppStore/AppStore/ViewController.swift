@@ -46,33 +46,41 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             }
         }else if indexPath.section == 1 {
             if let cell2 = tableView.dequeueReusableCell(withIdentifier: "secondTableViewCell", for: indexPath) as? SecondTableViewCell {
+                cell2.sectionHeaderLabel.text = "What We're Playing"
                 return cell2
             }
         }else if indexPath.section == 2 {
-            if let cell2 = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as? TableViewCell {
-                return cell2
+            if let cell3 = tableView.dequeueReusableCell(withIdentifier: "secondTableViewCell", for: indexPath) as? SecondTableViewCell {
+                cell3.sectionHeaderLabel.text = "Must-Play Games"
+                return cell3
+            }
+        }else if indexPath.section == 3 {
+            if let cell4 = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as? TableViewCell {
+                return cell4
             }
         }
         return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        var sectionHeader = ""
-            if section == 0 {
-                sectionHeader = ""
-            } else if section == 1 {
-                sectionHeader = "What We're Playing"
-            }else if section == 2 {
-                sectionHeader = "Must-Play Games"
-            }
-            return sectionHeader
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        var sectionHeader = ""
+//            if section == 0 {
+//                sectionHeader = " "
+//            } else if section == 1 {
+//                sectionHeader = " "
+//            }else if section == 2 {
+//                sectionHeader = " "
+//            }else if section == 3 {
+//                sectionHeader = " "
+//            }
+//            return sectionHeader
+//    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 340
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
 }
