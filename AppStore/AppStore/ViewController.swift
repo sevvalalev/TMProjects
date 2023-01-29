@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       tableViewDelegate()
+        tableViewDelegate()
         customNibs()
     }
     
@@ -65,6 +65,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 335
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
+    
 //    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 //        var sectionHeader = ""
 //            if section == 0 {
@@ -79,11 +87,4 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 //            return sectionHeader
 //    }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 340
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
-    }
 }

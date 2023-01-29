@@ -53,7 +53,7 @@ class SecondTableViewCell: UITableViewCell {
         layout.scrollDirection = .horizontal
         let screenWidth = UIScreen.main.bounds.width
         let itemWidth = (screenWidth - 16) / 1
-        layout.itemSize = CGSize(width: itemWidth , height: itemWidth * 0.25)
+        layout.itemSize = CGSize(width: itemWidth , height: itemWidth * 0.23)
         collectionView.collectionViewLayout = layout
     }
     

@@ -21,7 +21,7 @@ class SecondCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         gameImage.layer.cornerRadius = 10
-        downloadButton.layer.cornerRadius = 10
+        downloadButton.layer.cornerRadius = 15
     }
 
 }

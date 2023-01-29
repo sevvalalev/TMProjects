@@ -12,6 +12,11 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet var gameDetail: UILabel!
     @IBOutlet var firstLabel: UILabel!
     @IBOutlet var gameImage: UIImageView!
+    @IBOutlet var gameImageTwo: UIImageView!
+    
+    @IBOutlet var smallName: UILabel!
+    @IBOutlet var smallDetail: UILabel!
+    
     
     @IBOutlet var downloadButton: UIButton!
     
@@ -24,7 +29,8 @@ class CollectionViewCell: UICollectionViewCell {
     
     func configureUI() {
         gameImage.layer.cornerRadius = 10
-        downloadButton.layer.cornerRadius = 10
+        downloadButton.layer.cornerRadius = 15
+        gameImageTwo.layer.cornerRadius = 10
     }
 
 }
