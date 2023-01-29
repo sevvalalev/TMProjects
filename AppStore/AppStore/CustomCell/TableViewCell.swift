@@ -25,7 +25,7 @@ class TableViewCell: UITableViewCell {
         let g1 = GamesOne(name: "The Sims FreePlay",gameNameDetail: "Design the perfect Sim life", pictureOne: "simsOne", pictureTwo: "", category: "Virtual Town & Story Builder")
         let g2 = GamesOne(name: "Minecraft",gameNameDetail: "Your world awaits", pictureOne: "minecraftOne", pictureTwo: "", category: "Create, explore and survive!")
         let g3 = GamesOne(name: "Playdead's INSIDE",gameNameDetail: "Haunting and fascinating", pictureOne: "insideOne", pictureTwo: "", category: "From the Creators of LIMBO")
-        let g4 = GamesOne(name: "Township",gameNameDetail: "Join the expedition", pictureOne: "township", pictureTwo: "", category: "Turn a town into a metropolis")
+        let g4 = GamesOne(name: "Township",gameNameDetail: "Join the expedition", pictureOne: "township", pictureTwo: "", category: "Turn a town into a metropolis!")
         let g5 = GamesOne(name: "Subway Surfes",gameNameDetail: "Run these streets", pictureOne: "subwaysurfersOne", pictureTwo: "", category: "Join the endless running!")
         gamesOneList.append(g1)
         gamesOneList.append(g2)
