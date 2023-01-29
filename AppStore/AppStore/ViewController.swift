@@ -11,6 +11,9 @@ class ViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
+    var gamesOne = [GamesOne]()
+    var gamesTwo = [GamesTwo]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
