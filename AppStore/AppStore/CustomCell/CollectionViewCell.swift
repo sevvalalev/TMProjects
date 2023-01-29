@@ -9,8 +9,8 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var gameDetail: UILabel!
     @IBOutlet var firstLabel: UILabel!
-    @IBOutlet var secondLabel: UILabel!
     @IBOutlet var gameImage: UIImageView!
     
     @IBOutlet var downloadButton: UIButton!

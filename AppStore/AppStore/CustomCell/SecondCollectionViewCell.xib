@@ -24,11 +24,22 @@
                             <constraint firstAttribute="height" constant="80" id="x8S-4M-JYl"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOO-Nq-2T6">
-                        <rect key="frame" x="98" y="25" width="104.5" height="23"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-i3-574">
+                        <rect key="frame" x="98" y="25" width="104.5" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Name" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOO-Nq-2T6">
+                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmC-wG-kai">
+                                <rect key="frame" x="0.0" y="25" width="104.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPB-Yx-kyf">
                         <rect key="frame" x="268" y="25" width="80" height="36"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
@@ -40,12 +51,6 @@
                             <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
                         </buttonConfiguration>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmC-wG-kai">
-                        <rect key="frame" x="98" y="50" width="63" height="18"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-App Purchases" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFn-TJ-rcw">
                         <rect key="frame" x="262" y="65" width="86" height="12"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -56,17 +61,15 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstItem="lT8-i3-574" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="0Fc-sh-yJ4"/>
                 <constraint firstAttribute="trailing" secondItem="XFn-TJ-rcw" secondAttribute="trailing" constant="6" id="A0x-77-V8F"/>
                 <constraint firstItem="XFn-TJ-rcw" firstAttribute="top" secondItem="cPB-Yx-kyf" secondAttribute="bottom" constant="4" id="BFa-kW-Shi"/>
-                <constraint firstItem="vOO-Nq-2T6" firstAttribute="leading" secondItem="n2H-39-lua" secondAttribute="trailing" constant="10" id="Fey-FW-5vv"/>
                 <constraint firstAttribute="trailing" secondItem="cPB-Yx-kyf" secondAttribute="trailing" constant="6" id="UMe-zO-f90"/>
                 <constraint firstItem="n2H-39-lua" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="cf6-ou-dG3"/>
-                <constraint firstItem="JmC-wG-kai" firstAttribute="top" secondItem="vOO-Nq-2T6" secondAttribute="bottom" constant="2" id="ddr-nk-5jJ"/>
                 <constraint firstItem="cPB-Yx-kyf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="dsA-uJ-0D7"/>
                 <constraint firstAttribute="bottom" secondItem="cPB-Yx-kyf" secondAttribute="bottom" constant="39" id="fJG-nY-ouF"/>
-                <constraint firstItem="JmC-wG-kai" firstAttribute="leading" secondItem="n2H-39-lua" secondAttribute="trailing" constant="10" id="kCk-dD-sZf"/>
                 <constraint firstItem="n2H-39-lua" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="nrP-cq-ueh"/>
-                <constraint firstItem="vOO-Nq-2T6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="xuo-op-cX9"/>
+                <constraint firstItem="lT8-i3-574" firstAttribute="leading" secondItem="n2H-39-lua" secondAttribute="trailing" constant="10" id="tzN-4C-sQG"/>
             </constraints>
             <size key="customSize" width="354" height="70"/>
             <connections>

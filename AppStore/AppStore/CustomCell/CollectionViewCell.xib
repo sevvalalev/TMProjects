@@ -80,8 +80,8 @@
             <connections>
                 <outlet property="downloadButton" destination="f1L-vw-u8o" id="clc-PA-XVc"/>
                 <outlet property="firstLabel" destination="BaC-dQ-FZr" id="e8e-lT-Adf"/>
+                <outlet property="gameDetail" destination="7GG-b5-bz7" id="Etr-tO-raa"/>
                 <outlet property="gameImage" destination="gbD-Uq-Aem" id="HzC-ur-6Ik"/>
-                <outlet property="secondLabel" destination="7GG-b5-bz7" id="lqG-Fl-Zht"/>
             </connections>
             <point key="canvasLocation" x="112.31884057971016" y="62.611607142857139"/>
         </collectionViewCell>

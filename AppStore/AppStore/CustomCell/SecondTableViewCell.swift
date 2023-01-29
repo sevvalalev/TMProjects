@@ -14,15 +14,38 @@ class SecondTableViewCell: UITableViewCell {
     
     static let identifier = "secondTableViewCell"
     
+    var gamesTwoList = [GamesTwo]()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
         
-        let customCellNib: UINib = UINib(nibName: "SecondCollectionViewCell", bundle: nil)
-        collectionView.register(customCellNib, forCellWithReuseIdentifier: "secondCollectionViewCell")
+        collectionViewDelegate()
+        customNibs()
+        configureLayout()
         
+        
+        let g1 = GamesTwo(name: "Cookie Run: Kingdom", pictureOne: "cookierun", category: "A New Cookie Run Rpg")
+        let g2 = GamesTwo(name: "Genshin Impact", pictureOne: "genshin", category: "Explore a World of Adventure")
+        let g3 = GamesTwo(name: "MARVEL SNAP", pictureOne: "marvelsnap", category: "Card Battler with Superpowers")
+        let g4 = GamesTwo(name: "Project Makeover", pictureOne: "projectmakeover", category: "Makeover Puzzle Game")
+        let g5 = GamesTwo(name: "Cooking Madness", pictureOne: "cookingmadness", category: "Cook food in restaurants!")
+        let g6 = GamesTwo(name: "Fiona's Farm", pictureOne: "fionasfarm", category: "Solve puzzles & build a farm!")
+        let g7 = GamesTwo(name: "Call of Duty: Mobile", pictureOne: "callofduty", category: "Multiplayer, FPS, Shooter")
+        let g8 = GamesTwo(name: "Brawl Stars", pictureOne: "brawlstars", category: "Epic 3v3 Battle Royal")
+        let g9 = GamesTwo(name: "Clash of Clans", pictureOne: "clashofclans", category: "Lead Your Clan to Victory!")
+        gamesTwoList.append(g1)
+        gamesTwoList.append(g2)
+        gamesTwoList.append(g3)
+        gamesTwoList.append(g4)
+        gamesTwoList.append(g5)
+        gamesTwoList.append(g6)
+        gamesTwoList.append(g7)
+        gamesTwoList.append(g8)
+        gamesTwoList.append(g9)
+    }
+    
+    func configureLayout() {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.minimumInteritemSpacing = 0
@@ -33,13 +56,22 @@ class SecondTableViewCell: UITableViewCell {
         layout.itemSize = CGSize(width: itemWidth , height: itemWidth * 0.25)
         collectionView.collectionViewLayout = layout
     }
+    
+    func collectionViewDelegate() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+    
+    func customNibs() {
+        let customCellNib: UINib = UINib(nibName: "SecondCollectionViewCell", bundle: nil)
+        collectionView.register(customCellNib, forCellWithReuseIdentifier: "secondCollectionViewCell")
+    }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         
     }
-    
 }
 
 extension SecondTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -50,6 +82,10 @@ extension SecondTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SecondCollectionViewCell.identifier, for: indexPath) as? SecondCollectionViewCell {
+            let games = gamesTwoList[indexPath.row]
+            cell.gameNameLabel.text = games.name
+            cell.gameCategoryLabel.text = games.category
+            cell.gameImage.image = UIImage(named: games.pictureOne!)
             return cell
         }
         return UICollectionViewCell()
