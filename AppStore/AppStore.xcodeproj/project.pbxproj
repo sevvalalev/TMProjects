@@ -79,8 +79,7 @@
 				A48F370D29848870003C0B09 /* AppDelegate.swift */,
 				A48F370F29848870003C0B09 /* SceneDelegate.swift */,
 				A48F371129848870003C0B09 /* ViewController.swift */,
-				A4B7D9692985F3B2002A6891 /* GamesOne.swift */,
-				A4B7D96B2985F3BE002A6891 /* GamesTwo.swift */,
+				A4FEC9FA29882F3800B59163 /* Entity */,
 				A48F372929848CBA003C0B09 /* CustomCell */,
 				A48F371329848870003C0B09 /* Main.storyboard */,
 				A48F371629848875003C0B09 /* Assets.xcassets */,
@@ -103,6 +102,15 @@
 				A47D8C8029854FFE00D87304 /* SecondCollectionViewCell.xib */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		A4FEC9FA29882F3800B59163 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D9692985F3B2002A6891 /* GamesOne.swift */,
+				A4B7D96B2985F3BE002A6891 /* GamesTwo.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
