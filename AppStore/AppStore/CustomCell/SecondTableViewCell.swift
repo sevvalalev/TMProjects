@@ -23,8 +23,11 @@ class SecondTableViewCell: UITableViewCell {
         collectionViewDelegate()
         customNibs()
         configureLayout()
+        configureData()
         
-        
+    }
+    
+    func configureData() {
         let g1 = GamesTwo(name: "Brawl Stars", pictureOne: "brawlstars", category: "Epic 3v3 Battle Royal")
         let g2 = GamesTwo(name: "Genshin Impact", pictureOne: "genshin", category: "Explore a World of Adventure")
         let g3 = GamesTwo(name: "MARVEL SNAP", pictureOne: "marvelsnap", category: "Card Battler with Superpowers")
