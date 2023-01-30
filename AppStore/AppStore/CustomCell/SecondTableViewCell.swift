@@ -30,7 +30,7 @@ class SecondTableViewCell: UITableViewCell {
     func configureData() {
         let g1 = GamesTwo(name: "Brawl Stars", pictureOne: "brawlstars", category: "Epic 3v3 Battle Royal")
         let g2 = GamesTwo(name: "Genshin Impact", pictureOne: "genshin", category: "Explore a World of Adventure")
-        let g3 = GamesTwo(name: "MARVEL SNAP", pictureOne: "marvelsnap", category: "Card Battler with Superpowers")
+        let g3 = GamesTwo(name: "MARVEL SNAP", pictureOne: "marvelsnap", category: "Card Battler")
         let g4 = GamesTwo(name: "Cookie Run: Kingdom", pictureOne: "cookierun", category: "A New Cookie Run Rpg")
         let g5 = GamesTwo(name: "Clash of Clans", pictureOne: "clashofclans", category: "Lead Your Clan to Victory!")
         let g6 = GamesTwo(name: "Fiona's Farm", pictureOne: "fionasfarm", category: "Solve puzzles & build a farm!")
