@@ -21,7 +21,11 @@ class TableViewCell: UITableViewCell {
         collectionViewDelegate()
         customNibs()
         configureLayout()
+        configureData()
         
+    }
+    
+    func configureData() {
         let g1 = GamesOne(name: "The Sims™ FreePlay",gameNameDetail: "Design the perfect Sim life", pictureOne: "simsDark", pictureTwo: "simsTwo", category: "Virtual Town & Story Builder")
         let g2 = GamesOne(name: "Minecraft",gameNameDetail: "Your world awaits", pictureOne: "minecraftOne", pictureTwo: "minecraftTwo", category: "Create, explore and survive!")
         let g3 = GamesOne(name: "Playdead's INSIDE",gameNameDetail: "Haunting and fascinating", pictureOne: "insideOne", pictureTwo: "insideTwo", category: "From the Creators of LIMBO")
